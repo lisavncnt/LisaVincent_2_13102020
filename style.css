@@ -44,11 +44,6 @@ h3
 	font-size: 0.8em;
 }
 
-/* Couleur des icônes*/
-
-i.fas {
-	color: #0065FC;
-}
 
 /* HEADER */
 /* Disposition des éléments */
@@ -103,6 +98,64 @@ nav ul li a.black
 
 /* Barre de recherche */
 
-.recherches  {
-	display: inline;
+form  
+{
+	display: block;
+	position: relative;
+	top: 5px;
+}
+
+form input 
+{
+	height: 32px;
+	font-weight: bold;
+	border: 1px solid #F2F2F2;
+}
+
+form button {
+	position: relative;
+	right: 5px;
+	height: 36px;
+	border: 1px solid #0065FC;
+	background-color: #0065FC;
+	color: white;
+	border-radius: 0 10px 10px 0;
+	font-weight: bold;
+}
+
+/* Filtres */
+
+/* Couleur des icônes*/
+.icone 
+{
+	color: #0065FC;
+}
+
+.filter
+{
+	padding: 5px;
+	background-color: #DEEBFF;
+	border-radius: 50%;
+	font-size: 1.2em;
+
+}
+
+.fa-map-marker-alt {
+	position: relative;
+	top: 12px;
+	left: 5px;
+	font-size: 0.6em;
+	background-color: #F2F2F2;
+	padding: 12.5px;
+	border-radius: 10px 0 0 10px;
+	color: black;
+}
+
+.filtres ul li {
+	display: inline-block;
+	border-radius: 50px;
+	list-style-type: none;
+	border: 1px solid #F2F2F2;
+	margin-right: 5px;
+	text-transform: capitalize;
 }
