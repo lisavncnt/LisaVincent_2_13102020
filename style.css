@@ -1,0 +1,108 @@
+/*Importation et définition de la police */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* 
+{
+	font-family: 'Raleway', sans-serif;
+}
+
+/* Définition de la taille du site */
+
+body 
+{
+	width: 100%;
+	margin: auto; 
+}
+
+#bloc_page
+{
+	width: 65%;
+	margin: auto;
+	justify-content: center;
+}
+
+/* Définition des tailles de polices */
+
+h1, p, h3 
+{
+	margin-bottom: 5px;
+}
+
+h1 
+{
+	font-size: 1em;
+}
+
+p, li 
+{
+	font-size: 0.6em;
+}
+
+h3
+{
+	font-size: 0.8em;
+}
+
+/* Couleur des icônes*/
+
+i.fas {
+	color: #0065FC;
+}
+
+/* HEADER */
+/* Disposition des éléments */
+
+object
+{
+	float: left;
+	margin: 65px 15px;
+}
+
+nav 
+{
+	float: right;
+}
+
+header div 
+{
+	clear: both;
+	margin-bottom: 10px;
+}
+
+/* Disposition et style de la barre de navigation */
+
+nav 
+{
+	padding: 35px 25px 35px 0;
+}
+
+nav ul li
+{
+	margin: 0 15px;
+	padding: 35px 15px;
+	display: inline-block;
+	list-style-type: none;
+}
+
+.active 
+{
+	color: #0065FC;
+	border-top: 2px solid #0065FC;
+}
+
+nav ul li a, nav ul li a:visited {
+	text-decoration: none;
+	color: #0065FC;
+}
+
+nav ul li a.black
+{
+	color: black;
+}
+
+/* Barre de recherche */
+
+.recherches  {
+	display: inline;
+}
