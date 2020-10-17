@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* 
+{
+	font-family: 'Raleway', sans-serif;
+}
+
+/* -------------------Définition de la taille du site--------------------------- */
+
+body {
+	width: 95%;
+	margin: auto; 
+}
+
+#bloc_page {
+    box-sizing: border-box;
+	width: 100%;
+	margin: auto;
+}
+
+h1 {
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 1em
+}
+/* -------------------HEADER--------------------------*/
+
+header {
+    margin-top: 0;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+object {
+    margin-top: 25px;
+}
+
+nav {
+    float: right;
+    right: 5px;
+}
+
+nav li {
+    display: inline-block;
+    margin-top:0;
+    padding: 25px;
+}
+
+.active, .active :visited {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+/* -------------------------Under HEADER--------------------*/
+
+.underheader {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.underheader h1, p{
+    margin: 2px 5px;
+}
+
+form {
+    margin-top: 10px;
+    display: flex;
+}
+
+.fa-map-marker-alt {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+form input {
+    border: 1px solid #f2f2f2;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+form button {
+    border-radius: 0 10px 10px 0;
+    background-color: #0065FC;
+    color: white;
+    border: none;
+}
+
+/* ----------------------FILTRES-----------------*/
+
+.filter {
+    display: flex;
+    padding: 10px;
+}
+
+.filter > ul > li {
+    display: inline;
+}
+
+.icone {
+    color: #0065FC;
+    border-radius: 50px;
+    background-color: #DEEBFC;
+    padding: 10px;
+}
+
+.filter button {
+    text-transform: capitalize;
+    border: 2px solid #f2f2f2;
+    border-radius: 50px;
+    background-color: white;
+    padding: 0;
+    float: right;
+}
+
+/* ---------------Information------------------------*/
+
+
+/*-------------------FLEXBOX-------------------------*/
+/*---------------hebergements marseille------------*/
+
+.flexbox {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    width: 70%;
+    height: auto;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.flexbox h2 {
+    width: 100%;
+    height: auto;
+    padding-left: 25px; 
+}
+
+.flex-container {
+    width: 25%;
+    height: auto; 
+    background-color: white;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 2px black;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+
+figcaption p, h5, .blue, .grey {
+    padding: 2px 0;
+    margin: 5px;
+}
+
+.blue {
+    color: #0065FC;
+}
+
+.grey {
+    color: #F2F2F2;
+}

@@ -11,13 +11,13 @@
 
 body 
 {
-	width: 100%;
+	width: 85%;
 	margin: auto; 
 }
 
 #bloc_page
 {
-	width: 65%;
+	width: 100%;
 	margin: auto;
 	justify-content: center;
 }
@@ -56,7 +56,10 @@ object
 
 nav 
 {
+	display: flex;
 	float: right;
+	flex-wrap: nowrap;
+	flex-direction: column;
 }
 
 header div 
@@ -69,10 +72,10 @@ header div
 
 nav 
 {
-	padding: 35px 25px 35px 0;
+	padding: 20px 10px 20px 0;
 }
 
-nav ul li
+nav div
 {
 	margin: 0 15px;
 	padding: 35px 15px;
@@ -86,14 +89,13 @@ nav ul li
 	border-top: 2px solid #0065FC;
 }
 
-nav ul li a, nav ul li a:visited {
+nav a, nav a:visited {
 	text-decoration: none;
 	color: #0065FC;
 }
 
-nav ul li a.black
-{
-	color: black;
+nav div:hover {
+	box-shadow: black 2px;
 }
 
 /* Barre de recherche */
@@ -160,4 +162,19 @@ form button {
 	text-transform: capitalize;
 }
 
-vhlqd
+#blocimg {
+	background-color: darkred;
+	width: 600px;
+	height: auto;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.img {
+	width: 350px;
+	height: auto;
+}
+
+img {
+	width: 100%;
+}
