@@ -225,7 +225,7 @@ form > button:active {
 
 .content {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
     flex-wrap: wrap;
 
     width: 65%;
@@ -250,6 +250,11 @@ form > button:active {
     border: 5px solid white;
     box-shadow: 3px 5px 5px #e0dede;
     cursor: pointer;
+    margin: 5px 5px;
+}
+
+.flex-container:hover {
+    margin: 10px;
 }
 
 .flex-container img {
@@ -260,7 +265,7 @@ form > button:active {
 }
 
 
-.flex-container > div p, h4, .blue, .grey {
+.flex-container > p, h4, .blue, .grey {
     padding: 2px 0;
     margin: 3px 5px;
 }
@@ -272,8 +277,6 @@ form > button:active {
 .grey {
     color: #F2F2F2;
 }
-
-
 /*--------------------SECTION LES PLUS POPULAIRES---------------------*/
 
 .content_populaire {
@@ -291,26 +294,32 @@ form > button:active {
 .flex-container_populaire {
     align-self: center;
     width: 85%;
-    height: auto;
+    max-height: 130px;
     background-color: white;
     border-radius: 15px;
     margin: 0 10px 30px 10px;
     padding: 4px;
-    box-shadow: 3px 5px 5px #e0dede;
+    box-shadow: 3px 5px 5px #888;
     cursor: pointer;
 }
 
 .flex-container_populaire > img  {
     float: left;
     object-fit: cover;
-    height: auto;
-    width: 39%;
+    height: 100%;
+    width: 40%;
     border-radius: 15px 0 0 15px;
 }
 
+.flex-container_populaire:hover {
+    margin: auto;
+}
+
 .populaire_content {
-    position: relative;
-    left: 15px;
+    float: left;
+    display: block;
+    height: 100%;
+    padding-left: 15px;
 }
 
 .populaire_content > h4, .populaire_content > p {
@@ -318,19 +327,16 @@ form > button:active {
 }
 
 .titre_populaire {
-    padding: 10px;
+    padding-bottom: 10px;
 }
 
-.fa-chart-line {
-    position: relative;
-    float: right;
+.titre_populaire > .fa-chart-line {
     font-size: 20px;
-    right: 25px;
-    bottom: 25px;
+    padding-left: 130px;
 }
 
 .icone_star {
-    margin-top: 20px;
+    align-items: baseline;
 }
 
 /*------------------SECTION ACTIVITES-----------------*/
@@ -358,9 +364,13 @@ form > button:active {
     cursor: pointer;
 }
 
+.flex-container_activites:hover {
+    margin: auto;
+}
+
 .content_activites img {
     width: 100%;
-    height: 85%;
+    height: 90%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
@@ -372,15 +382,19 @@ form > button:active {
 
 
 .big {
-    height: 480px;
+    height: 470px;
 }
 
 .big h4 {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .little {
-    height: 218px;
+    height: 220px;
+}
+
+.little img {
+    height: 85%;
 }
 
 /*------------------------FOOTER--------------------------*/
