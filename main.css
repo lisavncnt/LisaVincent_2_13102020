@@ -242,7 +242,7 @@ form > button:active {
 
 .flex-container {
     width: 29%;
-    height: 220px;
+    height: 205px;
     background-color: white;
     border-radius: 15px;
     margin:0;
@@ -434,11 +434,11 @@ footer {
 
 @media screen and (min-width: 1000px) and (max-width:1205px) {
     .titre_populaire > .fa-chart-line {
-        margin-left: 19%;
+        margin-left: 15%;
     }
     
-    .flex-container_populaire p {
-        font-size: 0.9em;
+    .flex-container_populaire p, .flex-container_populaire h4 {
+        font-size: 0.8em;
     }
     
     .content {
@@ -448,18 +448,43 @@ footer {
     .content_populaire {
         width: 30%;
     }
+    
+    h4 {
+        font-size: 0.8em;
+    }
 }
 
-@media screen and (min-width: 779px) and (max-width:1024px){
+@media screen and (min-width: 900px) and (max-width:1024px){
     
     body {
-        width: 100%;
-        margin: 0 auto;
+        margin: 0;
     }
     
-    #bloc_page {
-        margin: 0 15px;
+      #bloc_page {
+        margin: 0;    
     }
+    
+    
+     nav {
+        float: left;
+        width: 100%; 
+    }
+    
+    .header-title, .filter-container, .information, object, .logo {
+        margin: 15px;
+    }
+    
+    nav > a {
+        width: 43%;
+        text-align: center;
+        border-bottom: 3px solid #F2F2F2;
+    }
+    
+    nav > a:hover {
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+    }
+    
     
     .flexbox {
         flex-flow: wrap;
@@ -483,10 +508,32 @@ footer {
         border-radius: 15px 15px 0 0;
     }
     
+    .afficher {
+        margin-left: 10px;
+    }
+        
     .content_populaire {
         width: 100%;
         order: 1;
         flex-direction: row;
+        border-radius: 0;
+    }
+    
+    .populaire_content h4 {
+        font-size: 0.9em;
+    }
+    
+    .populaire_content p {
+        font-size: 0.8em;
+    }
+    
+    .fa-star {
+        font-size: 0.8em;
+    }
+    
+    .populaire_content {
+        padding-left: 9px;
+        height: 79%;
     }
     
     .flex-container_populaire {
@@ -497,45 +544,54 @@ footer {
     float: left;
     object-fit: cover;
     height: 130px;
-    width: 60%;
+    width: 40%;
     border-radius: 15px 0 0 15px;
 }
+    
+    .titre_populaire > .fa-chart-line {
+        margin-left: 71%;
+    }
     
     .content_activites {
         order: 3;
         width: 100%;
-        max-height: 100px;
+    }
+    
+    .content_activites img {
+        height: 87%;
     }
     
     .container {
         width: 100%;
-        height: 100px;
-        flex-direction: column;
     }
     
     .big {
-        height: auto;
+        height: 300px;
     }
     
     .little {
-        height: auto;
+        height: 300px;
     }
+    
         
     footer {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
-@media screen and (max-width:780px) {
+@media screen and (min-width: 741px) and (max-width:900px) {
     
     body {
-        width: 100%;
-        margin: 0 auto;
+        margin: 0;
     }
     
-    #bloc_page {
-        margin: 0 15px;
+      #bloc_page {
+        margin: 0;    
+    }
+    
+    .header-title, .filter-container, .information, object, .logo {
+        margin: 15px;
     }
     
     nav {
@@ -560,30 +616,53 @@ footer {
         flex-grow: 1;
     }
     
+    .flexbox h2 {
+        margin-bottom: 10px;
+    }
+        
     .content{
         order: 2;
         width: 100%;
         margin-top: 15px;
         background: white;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
     }
     
     .flex-container {
-        width: 100%;
+        width: 47%;
+        margin-bottom: 10px;
     }
     
     .flex-container img {        
-        border-radius: 15px 0 0 15px;
+        border-radius: 15px 15px 0 0;
+    }
+    
+    .afficher {
+        margin-left: 0;
     }
     
     .content_populaire {
         width: 100%;
         order: 1;
+        border-radius: 0;
+    }
+    
+    .populaire_content {
+        width: 50%;
+    }
+    
+    .icone_star {
+        height: 30px;
+    }
+    
+    .titre_populaire > .fa-chart-line {
+        margin-left: 62%;
     }
     
     .content_activites {
         order: 3;
         width: 100%;
+        padding: 0 15px;
     }
     
     .container {
@@ -592,15 +671,126 @@ footer {
         flex-direction: column;
     }
     
-    .big {
-        height: auto;
+    .big, .little {
+        height: 300px;
     }
     
-    .little {
-        height: auto;
+    .big img {
+        height: 85%;
+    }
+    
+    .big h4, .little h4 {
+        margin: 5px auto;
     }
         
     footer {
+       position: relative;
+        bottom: auto;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:740px){
+  
+    body {
+        margin: 0;
+    }
+    
+      #bloc_page {
+        margin: 0;    
+    }
+    
+    .header-title, .filter-container, .information, object, .logo {
+        margin: 15px;
+    }
+    
+    nav {
+        float: left;
+        width: 100%;
+    }
+    
+    nav > a {
+        width: 35%;
+        text-align: center;
+        border-bottom: 3px solid #F2F2F2;
+    }
+    
+    nav > a:hover {
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+    }
+        
+    .content{
+        order: 2;
+        width: 100%;
+        margin-top: 15px;
+        background: white;
+        flex-flow: row wrap;
+    }
+    
+    .filter-container {
+        flex-wrap: wrap;
+    }
+    
+    .flex-container {
+        width: 100%;
+        height: 275px;
+        margin-bottom: 10px;
+    }
+    
+    .flex-container img {    
+        height: 72%;
+        border-radius: 15px 15px 0 0;
+    }
+    
+    .afficher {
+        margin-left: 0;
+    }
+    
+    .content_populaire {
+        width: 100%;
+        order: 1;
+        border-radius: 0;
+    }
+    
+        
+    .populaire_content {
+        width: 50%;
+    }
+    
+    .icone_star {
+        height: 30px;
+    }
+    
+    .titre_populaire > .fa-chart-line {
+        margin-left: 55%;
+    }
+    
+    .content_activites {
+        order: 3;
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+    .container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .big, .little {
+        height: 300px;
+    }
+    
+    .big img {
+        height: 85%;
+    }
+    
+    .big h4, .little h4 {
+        margin: 5px auto;
+    }
+        
+    footer {
+        flex-direction: column;
        position: relative;
         bottom: auto;
     }
