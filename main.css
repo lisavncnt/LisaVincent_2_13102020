@@ -709,7 +709,7 @@ footer {
     }
     
     nav > a {
-        width: 35%;
+        display: inline;
         text-align: center;
         border-bottom: 3px solid #F2F2F2;
     }
