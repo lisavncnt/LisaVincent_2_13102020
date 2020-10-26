@@ -10,14 +10,13 @@
 body {
 	width: 100%;
 	margin: 0 auto;
-    position: relative;
 }
 
 #bloc_page {
     display: flex;
 	flex-flow: row wrap;
     box-sizing: border-box;
-	height: 100vh;
+	height: auto;
 	margin: 0 15px;
 }
 
@@ -35,6 +34,10 @@ a, a:visited {
 
 a:hover {
     text-decoration: underline;
+}
+
+li {
+    list-style-type: none;
 }
 /* -------------------HEADER--------------------------*/
 
@@ -130,7 +133,6 @@ form > button:active {
 }
 .btn
 {
-    white-space: wrap;
     font-size: 0.8em;
     height: 40px;
     border-radius: 50px;
@@ -143,9 +145,8 @@ form > button:active {
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.45);
 }
 
-.btn:focus
-{
-    box-shadow: 0 3px 10px 0 rgba (0, 0, 0, 0.4);
+.btn:focus {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
 .btn > span, .icone {
@@ -252,7 +253,7 @@ form > button:active {
 }
 
 .flex-container:hover {
-    margin: 10px 0;
+    box-shadow: 5px 5px 5px #888;
 }
 
 .flex-container img {
@@ -266,6 +267,7 @@ form > button:active {
 .flex-container > p, h4, .blue, .grey {
     padding: 2px 0;
     margin: 3px 5px;
+    width: 100%
 }
 
 .blue {
@@ -278,11 +280,11 @@ form > button:active {
 /*--------------------SECTION LES PLUS POPULAIRES---------------------*/
 
 .content_populaire {
-    width: 30%;
+    width: 28%;
     height: auto;
     background-color: #F2F2F2;
     border-radius: 15px;
-
+    padding: 0 15px;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
@@ -290,13 +292,13 @@ form > button:active {
 
 .flex-container_populaire {
     align-self: center;
-    width: 85%;
-    max-height: 130px;
+    width: 89%;
+    height: 130px;
     background-color: white;
     border-radius: 15px;
     margin: 0 10px 30px 10px;
     padding: 4px;
-    box-shadow: 3px 5px 5px #888;
+    box-shadow: 3px 5px 5px #F2F2F2;
     cursor: pointer;
 }
 
@@ -309,17 +311,17 @@ form > button:active {
 }
 
 .flex-container_populaire:hover {
-    margin: auto;
+    box-shadow: 5px 5px 5px #888;
 }
 
 .populaire_content {
     float: left;
-    height: 100%;
+    height: 80%;
     padding-left: 15px;
 }
 
 .populaire_content > h4, .populaire_content > p {
-    padding: 8px 0;
+    padding: 0;
 }
 
 .titre_populaire {
@@ -333,13 +335,13 @@ form > button:active {
 }
 
 .icone_star {
-    align-items: baseline;
+    float: left;
+    padding-left: 15px;
+    display: flex;
 }
 
 /*------------------SECTION ACTIVITES-----------------*/
 .content_activites {
-    width: 100%;
-    height: 50%;
     border-radius: 15px;
     display: flex;
     flex-flow: row wrap;
@@ -356,13 +358,12 @@ form > button:active {
     margin: 15px; 
     background-color: white;
     border-radius: 15px;
-    box-shadow: 2px black;
     box-shadow: 5px 5px 5px #F2F2F2;
     cursor: pointer;
 }
 
 .flex-container_activites:hover {
-    margin: auto;
+    box-shadow: 5px 5px 5px #888;
 }
 
 .content_activites img {
@@ -401,26 +402,53 @@ footer {
     background: #F2F2F2;
     display: flex;
 }
-
-footer > ul {
+.footer_elmt {
     width: 35%;
 }
-
-footer > ul > h3 {
-    margin-left: 15px;
+.footer_elmt h3 {
+    padding-left: 37px;
 }
 
-footer > ul > li {
-    list-style-type: none;
-    padding: 10px;
-}
-
-footer > ul> li > a {
-    text-decoration: none;
+.footer_elmt > ul > li{
+    padding: 5px 0;
 }
 
 
 /*-------------------MEDIA QUERIES------------------------*/
+
+@media screen and (max-width:1400px) {
+    .titre_populaire > .fa-chart-line {
+        margin-left: 28%;
+    }
+}
+
+@media screen and (max-width:1270px) {
+    .titre_populaire > .fa-chart-line {
+        margin-left: 24%;
+    }
+    
+    .flex-container_populaire p{
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width:1205px) {
+    .titre_populaire > .fa-chart-line {
+        margin-left: 19%;
+    }
+    
+    .flex-container_populaire p {
+        font-size: 0.9em;
+    }
+    
+    .content {
+        width: 63%;
+    }
+    
+    .content_populaire {
+        width: 30%;
+    }
+}
 
 @media screen and (min-width: 779px) and (max-width:1024px){
     
@@ -469,19 +497,19 @@ footer > ul> li > a {
     float: left;
     object-fit: cover;
     height: 130px;
-    width: 40%;
+    width: 60%;
     border-radius: 15px 0 0 15px;
 }
     
     .content_activites {
         order: 3;
         width: 100%;
-        max-height: 150px;
+        max-height: 100px;
     }
     
     .container {
         width: 100%;
-        height: auto;
+        height: 100px;
         flex-direction: column;
     }
     
@@ -556,7 +584,6 @@ footer > ul> li > a {
     .content_activites {
         order: 3;
         width: 100%;
-        max-height: 150px;
     }
     
     .container {
