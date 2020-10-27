@@ -699,17 +699,20 @@ footer {
         margin: 0;    
     }
     
+    
     .header-title, .filter-container, .information, object, .logo {
         margin: 15px;
     }
     
     nav {
-        float: left;
+        overflow: hidden;
         width: 100%;
     }
     
     nav > a {
-        display: inline;
+        float: left;
+        width: 35%;
+        display: block;
         text-align: center;
         border-bottom: 3px solid #F2F2F2;
     }
@@ -757,12 +760,21 @@ footer {
         width: 50%;
     }
     
+    .populaire_content h4 {
+        font-size: 0.8em;
+    }
+    
+    .populaire_content p {
+        font-size: 0.7em;
+    }
+    
     .icone_star {
         height: 30px;
+        padding-left: 5px;
     }
     
     .titre_populaire > .fa-chart-line {
-        margin-left: 55%;
+        margin-left: 10%;
     }
     
     .content_activites {
@@ -791,7 +803,19 @@ footer {
         
     footer {
         flex-direction: column;
-       position: relative;
+        position: relative;
         bottom: auto;
+    }
+}
+
+@media screen and (min-width: 350px) {
+    nav > a {
+        width: 32%;
+    }
+}
+
+@media screen and (min-width:395px){
+    nav > a {
+        width: 34%;
     }
 }
