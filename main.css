@@ -234,7 +234,7 @@ form > button:active {
 .flexbox h2 {
     width: 100%;
     height: auto;
-    margin: 25px 5px 0 5px;
+    margin: 25px 5px 0 15px;
 }
 /*---------------SECTION HEBERGEMENTS------------*/
 
@@ -312,7 +312,7 @@ form > button:active {
     height: 130px;
     background-color: white;
     border-radius: 15px;
-    margin: 0 10px 30px 10px;
+    margin: 0 10px 30px 0;
     padding: 4px;
     box-shadow: 3px 5px 5px #F2F2F2;
     cursor: pointer;
@@ -333,7 +333,7 @@ form > button:active {
 .populaire_content {
     float: left;
     height: 80%;
-    padding-left: 15px;
+    padding-left: 10px;
 }
 
 .populaire_content > h4, .populaire_content > p {
@@ -659,18 +659,20 @@ footer {
 }
 
 @media screen and (max-width:740px) and (min-width:320px) {
-  
-    .header-title, .filter-container, .information, object, .logo {
+    
+    #bloc_page {
+        margin: auto;
+    }
+    
+      .header-title, .filter-container, .information, object, .logo {
         margin: 15px;
     }
     
     nav {
-        overflow: hidden;
         width: 100%;
     }
     
     nav > a {
-        float: left;
         width: 50%;
         text-align: center;
         border-bottom: 3px solid #F2F2F2;
@@ -689,12 +691,16 @@ footer {
         visibility: visible;
     }
     
+    .information > p {
+        font-size: 0.8rem;
+    }
+    
     .content{
         order: 2;
         width: 100%;
-        margin-top: 15px;
         background: white;
         flex-flow: row wrap;
+        padding: 0;
     }
     
     .filter-container {
@@ -709,34 +715,45 @@ footer {
         width: 100%;
     }
     
+    .flexbox h2 {
+        font-size: 1.1rem;
+    }
+    
     .flex-container {
         width: 100%;
-        height: 275px;
+        height: 170px;
         margin-bottom: 10px;
     }
     
+    .flex-container p, .flex-container h4{
+        font-size: 0.8rem;
+    }
+    
     .flex-container img {    
-        height: 72%;
+        height: 100px;
         border-radius: 15px 15px 0 0;
     }
     
     .afficher {
-        margin-left: 0;
+        margin-left: 10px;
+    }
+    
+    .fa-star {
+        font-size: 0.9rem;
     }
     
     .content_populaire {
         width: 100%;
         order: 1;
-        border-radius: 0;
+        border-radius: 0
     }
     
-        
     .populaire_content {
         width: 50%;
     }
     
     .populaire_content h4 {
-        font-size: 0.8em;
+        font-size: 0.7rem;
     }
     
     .populaire_content p {
@@ -751,7 +768,6 @@ footer {
     .content_activites {
         order: 3;
         width: 100%;
-        padding: 0 15px;
     }
     
     .container {
@@ -761,7 +777,7 @@ footer {
     }
     
     .big, .little {
-        height: 300px;
+        height: 170px;
     }
     
     .big img {
@@ -769,12 +785,17 @@ footer {
     }
     
     .big h4, .little h4 {
-        margin: 5px auto;
+        margin: 2px;
+        font-size: 0.7rem;
     }
         
     footer {
         flex-direction: column;
         position: relative;
         bottom: auto;
+    }
+    
+    .footer_elmt {
+        width: 100%;
     }
 }
