@@ -351,6 +351,11 @@ form > button:active {
     font-size: 20px;
 }
 
+.fa-chart-line {
+    position: absolute;
+    right: 30px;
+}
+
 .icone_star {
     float: left;
     padding-left: 15px;
@@ -661,7 +666,7 @@ footer {
 @media screen and (max-width:740px) and (min-width:320px) {
     
     #bloc_page {
-        margin: auto;
+        margin: none;
     }
     
       .header-title, .filter-container, .information, object, .logo {
