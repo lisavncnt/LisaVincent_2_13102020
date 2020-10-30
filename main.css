@@ -574,8 +574,14 @@ footer {
 }
 
 @media screen and (max-width:900px) and (min-width: 741px) {
+        body {
+        margin: 0;
+    }
     
-
+      #bloc_page {
+        margin: 0;    
+    }
+    
     .header-title, .filter-container, .information, object, .logo {
         margin: 15px;
     }
@@ -665,10 +671,14 @@ footer {
 
 @media screen and (max-width:740px) and (min-width:320px) {
     
-    #bloc_page {
-        margin: none;
+        body {
+        margin: 0;
     }
     
+      #bloc_page {
+        margin: 0;    
+    }
+        
       .header-title, .filter-container, .information, object, .logo {
         margin: 15px;
     }
