@@ -136,8 +136,8 @@ form > input {
 
 
 form > button:active {
-    border: 1px solid #DEEBFC;
-    background: #DEEBFC;
+    border: 1px solid #DEEBFF;
+    background: #DEEBFF;
     color: #0065FC;
 }
 
@@ -181,7 +181,7 @@ form > button:active {
 
 .btn:focus {
     color: #0065FC;
-    background: #DEEBFC;
+    background: #DEEBFF;
 }
 
 .btn > .icone {
@@ -191,7 +191,7 @@ form > button:active {
     width: 16px;
     text-align: center;
     font-size: 1.25em;
-    background: #DEEBFC;
+    background: #DEEBFF;
     border-radius: 50%;
     color: #0065FC;
 }
